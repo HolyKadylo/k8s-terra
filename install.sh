@@ -32,6 +32,9 @@ sudo mv daemon.json /etc/docker/
 sudo systemctl restart docker
 sudo systemctl restart kubelet
 
+sudo usermod -aG docker $USER
+newgrp docker
+
 sudo kubeadm reset
 sudo rm -rf /var/lib/etcd
 
