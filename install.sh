@@ -46,4 +46,4 @@ sudo swapoff -a
 #sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 
-sudo kubeadm init --apiserver-advertise-address=10.20.0.200 ### TODO variable
+# sudo kubeadm init --apiserver-advertise-address=10.20.0.200 ### TODO variable
