@@ -31,10 +31,11 @@ sudo systemctl stop docker
 sleep 10
 sudo mv daemon.json /etc/docker/
 sudo systemctl start docker
-sudo systemctl restart kubelet
 
 sudo usermod -aG docker $USER
 newgrp docker
+
+sudo systemctl restart kubelet
 
 sudo kubeadm reset
 sudo rm -rf /var/lib/etcd
