@@ -4,7 +4,7 @@
 # Requires root privileges
 
 sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get upgrade -y
 sudo modprobe br_netfilter
 sudo apt-get remove -y docker docker-engine docker.io containerd runc
 sudo apt-get install -y\
@@ -24,9 +24,6 @@ sudo apt-get -y install docker-ce docker-ce-cli containerd.io
 
 sudo usermod -aG docker $USER
 newgrp docker
-
-### Docker has to be installed by now
-### Installing kuber now
 
 sudo apt-get update
 sudo apt-get install -y apt-transport-https ca-certificates curl
