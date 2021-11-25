@@ -1,4 +1,3 @@
 {
-    "_comment": "https://stackoverflow.com/a/65870152",
     "exec-opts": ["native.cgroupdriver=systemd"]
 }
