@@ -8,3 +8,5 @@ Most likely Develop branch contains a fresher code, so you may want to:
 ```
 git clone https://github.com/HolyKadylo/k8s-terra.git --branch develop
 ```
+
+This repo development is paused for now
